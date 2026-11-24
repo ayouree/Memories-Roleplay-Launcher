@@ -1,0 +1,11 @@
+{
+  "gates": [
+    { "id": "main", "name": "GERBANG UTAMA", "host": "gerbang-memo-utama.maheskanoko.com", "port": 30120 },
+    { "id": "jakarta", "name": "GERBANG JAKARTA", "host": "gerbang-memo-1.maheskanoko.com", "port": 30120 },
+    { "id": "singapore", "name": "GERBANG SINGAPURA", "host": "gerbang-memo-2.maheskanoko.com", "port": 30120 }
+  ],
+  "links": {
+    "discord": "https://discord.gg/memoriesrp",
+    "tiktok": "https://www.tiktok.com/@memoriesroleplay"
+  }
+}

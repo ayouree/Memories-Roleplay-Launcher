@@ -1,0 +1,25 @@
+[package]
+name = "memories-launcher"
+version = "1.0.0"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }
+ureq = { version = "2", features = ["json"] }
+rfd = "0.15"
+open = "5"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+rusty-leveldb = "3"
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
